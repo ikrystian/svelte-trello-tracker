@@ -1,0 +1,20 @@
+{
+    "name": "Time Tracker Power-Up",
+    "details": "Power-Up do raportowania czasu spędzonego nad zadaniami w Trello",
+    "icon": {
+      "url": "/icon.png"
+    },
+    "author": "Krystian Kuźmiński",
+    "capabilities": [
+        "callback",
+        "card-badges",
+        "card-detail-badges",
+        "card-buttons",
+        "board-buttons",
+        "card-back-section",
+        "show-settings"
+    ],
+    "iframe": {
+      "url": "{origin}"
+    }
+  }
