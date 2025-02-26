@@ -8,7 +8,6 @@
 		script.src = 'https://p.trellocdn.com/power-up.min.js';
 		script.onload = () => {
 		trelloClient = window.TrelloPowerUp;
-		// Initialize your Power-Up when script is loaded
 		initPowerUp();
 		};
 		document.head.appendChild(script);
@@ -18,6 +17,22 @@
 		if (!trelloClient) return;
 		
 		trelloClient.initialize({
+			'board-buttons': function(t) {
+				return [{
+				icon: {
+					dark: 'https://img.icons8.com/ios-filled/50/000000/clock--v1.png',
+					light: 'https://img.icons8.com/ios-filled/50/ffffff/clock--v1.png'
+				},
+				text: 'Raporty czasu',
+				callback: function(t) {
+					return t.modal({
+					title: 'Raporty czasu dla całej tablicy',
+					url: './time-report',
+					height: 500
+					});
+				}
+				}];
+			},
 		'card-buttons': function(t, options) {
 			return [{
 			icon: '/icon.svg',

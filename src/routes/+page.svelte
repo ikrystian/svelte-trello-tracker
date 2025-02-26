@@ -19,6 +19,6 @@
 </script>
 
 <div class="power-up-content">
-  <h1>My Trello Power-Up</h1>
-  <!-- Your Power-Up content -->
+    <h1>Trello Time Tracker</h1>
+    <p>To jest rozszerzenie do raportowania czasu spędzonego nad zadaniami w Trello.</p>
 </div>
